@@ -18,6 +18,8 @@ htmlspecialchars() 函数把一些预定义的字符转换为 HTML 实体。
 > （大于） 成为 &gt;
 ```
 
+preg_match 函数 — 进行正则表达式匹配
+
 ## `$_GET` 变量 
 
 在 PHP 中，预定义的 `$_GET` 变量用于收集来自 method="get" 的表单中的值。
