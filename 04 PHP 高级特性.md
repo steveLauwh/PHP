@@ -51,3 +51,15 @@ include 'filename';
 
 require 'filename';
 ```
+
+## PHP 文件处理
+
+`fopen()` 函数用于在 PHP 中打开文件。
+
+`fclose()` 函数用于关闭打开的文件。
+
+`feof()` 函数检测是否已到达文件末尾（EOF）。
+
+`fgets()` 函数用于从文件中逐行读取文件。
+
+`fgetc()` 函数用于从文件中逐字符地读取文件。
