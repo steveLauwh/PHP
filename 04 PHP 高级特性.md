@@ -63,3 +63,46 @@ require 'filename';
 `fgets()` 函数用于从文件中逐行读取文件。
 
 `fgetc()` 函数用于从文件中逐字符地读取文件。
+
+## PHP 文件上传
+
+`$_FILES["file"]["name"]` - 上传文件的名称
+
+`$_FILES["file"]["type"]` - 上传文件的类型
+
+`$_FILES["file"]["size"]` - 上传文件的大小，以字节计
+
+`$_FILES["file"]["tmp_name"]` - 存储在服务器的文件的临时副本的名称
+
+`$_FILES["file"]["error"]` - 由文件上传导致的错误代码
+
+## PHP Cookie
+
+Cookie 常用于识别用户。Cookie 是一种服务器留在用户计算机上的小文件。每当同一台计算机通过浏览器请求页面时，这台计算机将会发送 Cookie。通过 PHP，您能够创建并取回 Cookie 的值。
+
+> 创建 Cookie
+
+`setcookie()` 函数设置 Cookie，必须位于 <html> 标签之前。
+    
+> 取回 Cookie 的值
+
+PHP 的 `$_COOKIE` 变量用于取回 cookie 的值。
+
+> 删除 Cookie
+
+当删除 cookie 时，使过期日期变更为过去的时间点。
+
+```
+<?php
+setcookie("user", "steve", time()+3600);
+?>
+
+<?php
+echo $_COOKIE["user"];
+?>
+
+<?php
+// 设置 cookie 过期时间为过去 1 小时
+setcookie("user", "", time()-3600);
+?>
+```
