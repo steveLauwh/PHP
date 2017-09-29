@@ -28,6 +28,7 @@ $conn = new mysqli($servername, $username, $password);
 $conn = mysqli_connect($servername, $username, $password);
 ```
 ```php
+// PDO
 $conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
 ```
 
@@ -82,3 +83,6 @@ echo "数据库创建成功<br>";
 ```
 
 > **创建数据表**
+
+CREATE TABLE 语句用于创建 MySQL 表。
+
