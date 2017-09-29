@@ -141,7 +141,9 @@ Session 的工作机制是：为每个访客创建一个唯一的 id (UID)，并
 
 PHP mail() 函数用于从脚本中发送电子邮件。
 
-`mail(to,subject,message,headers,parameters)`
+```php
+mail(to,subject,message,headers,parameters)
+```
 
 PHP 运行邮件函数需要一个已安装且正在运行的邮件系统(如：sendmail、postfix、qmail等)。
 
@@ -171,7 +173,7 @@ PHP 运行邮件函数需要一个已安装且正在运行的邮件系统(如：
 
 当异常被抛出时，其后的代码不会继续执行，PHP 会尝试查找匹配的 "catch" 代码块。
 
-Try、throw 和 catch
+try、throw 和 catch 关键字
 
 ## PHP 过滤器
 
@@ -191,7 +193,13 @@ filter_input_array - 获取多个输入变量，并通过相同的或不同的�
 
 使用 PHP 语言来编码和解码 JSON 对象。
 
-对变量进行 JSON 编码：`string json_encode ( $value [, $options = 0 ] )`
+对变量进行 JSON 编码：
+```php
+string json_encode ( $value [, $options = 0 ] )
+```
 
-对 JSON 格式的字符串进行解码，并转换为 PHP 变量：`mixed json_decode ($json [,$assoc = false [, $depth = 512 [, $options = 0 ]]])`
+对 JSON 格式的字符串进行解码，并转换为 PHP 变量：
+```php
+mixed json_decode ($json [,$assoc = false [, $depth = 512 [, $options = 0 ]]])
+```
 
