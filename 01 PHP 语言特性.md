@@ -229,6 +229,8 @@ function functionName()
 ?>
 ```
 
+`unlink()`: 删除一个文件。
+
 > **PHP 魔数变量**
 
 PHP 向它运行的任何脚本提供了大量的预定义常量。
