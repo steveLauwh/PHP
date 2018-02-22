@@ -28,11 +28,13 @@ class User
 		$stmt = $this->_db->prepare($sql);
 		$stmt->bindParam(':username', $username);
 		$stmt->bindParam(':password', $password);
-		$stmt->execute();
+		if (!$stmt->execute()) {
+			throw new Exception("服务器内部错误", ErrorCode::SERVER_INTERNAL_ERROR);
+		}
 		$user = $stmt->fetch(PDO::FETCH_ASSOC);
 		if (empty($user))
 		{
-			throw new Exception("Username Error or Password Error", USERNAME_OR_PASSWORD_INVALID);			
+			throw new Exception("用户名或密码错误", ErrorCode::USERNAME_OR_PASSWORD_INVALID);			
 		}
 
 		unset($user['password']);

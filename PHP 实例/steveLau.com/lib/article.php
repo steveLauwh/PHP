@@ -98,7 +98,7 @@ class Article
 			'articleId' => $articleId,
 			'title' => $title,
 			'content' => $content,
-			'createAt' => $article['created_at']
+			'userId' => $article['user_id']
 		];
 	}	
 

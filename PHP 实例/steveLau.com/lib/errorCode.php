@@ -15,5 +15,6 @@ class ErrorCode
 	const ARTICLE_EDIT_FAIL = 12;
 	const ARTICLE_DELETE_FAIL = 13;
 	const PAGE_SIZE_TO_BIG = 14;
+	const SERVER_INTERNAL_ERROR = 15;
 }
 ?>
