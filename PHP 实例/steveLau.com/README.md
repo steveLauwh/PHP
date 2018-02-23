@@ -37,7 +37,7 @@ RESTful(Representational State Transfer)：本质是一种软件架构风格，�
 
 将 steveLau.com 文件夹所有内容拷贝到 UPUPW_AP5.6/vhosts 目录下，启动服务器，通过 DHC Client 来验证 RESTful API。
 
-## 参考
+### 参考
 
 * [HTTP](https://github.com/steveLauwh/TCP-IP/tree/master/HTTP)
 * [理解RESTful架构](http://www.ruanyifeng.com/blog/2011/09/restful)
