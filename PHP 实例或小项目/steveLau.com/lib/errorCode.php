@@ -1,6 +1,6 @@
 <?php
 // 定义的错误码
-// const 常量属于某个类，大写
+// const 常量属于某个类，大写命名
 class ErrorCode
 {
 	const USERNAME_EXISTS = 1;
