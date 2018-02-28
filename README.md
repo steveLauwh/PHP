@@ -1,4 +1,4 @@
-# PHP 深入浅出
+﻿# PHP 深入浅出
 
 PHP 是一种创建动态交互性站点的服务器端脚本语言。
 
@@ -13,7 +13,7 @@ PHP 是开源的，免费的。
 * [03 PHP 表单处理](https://github.com/steveLauwh/PHP/blob/master/03%20PHP%20%E8%A1%A8%E5%8D%95%E5%A4%84%E7%90%86.md)
 * [04 PHP 高级特性](https://github.com/steveLauwh/PHP/blob/master/04%20PHP%20%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7.md)
 * [05 PHP 访问 MySQL](https://github.com/steveLauwh/PHP/blob/master/05%20PHP%2BMySQL.md)
-* [06 PHP 实例](https://github.com/steveLauwh/PHP/tree/master/PHP%20%E5%AE%9E%E4%BE%8B)
+* [06 PHP 实例或小项目](https://github.com/steveLauwh/PHP/tree/master/PHP%20%E5%AE%9E%E4%BE%8B%E6%88%96%E5%B0%8F%E9%A1%B9%E7%9B%AE)
 
 ## 参考资料
 
