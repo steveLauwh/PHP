@@ -1,4 +1,5 @@
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ index.php/$1 [L]
+# Apache 服务器的一个配置文件，负责相关目录下的网页配置
+RewriteEngine on #启用 mod_rewrite 引擎
+RewriteCond %{REQUEST_FILENAME} !-d  #如果请求的不是一个目录，继续处理
+RewriteCond %{REQUEST_FILENAME} !-f  #如果请求的不是一个文件，继续处理
+RewriteRule ^(.*)$ index.php/$1 [L]  #转给 index.php 处理，[L] 作为最后一个匹配项
