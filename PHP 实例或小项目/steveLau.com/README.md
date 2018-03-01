@@ -41,7 +41,11 @@ HTTP 协议是一个无状态协议。所有的状态都保存在服务器端。
 
 下载 UPUPW.NET 集成环境，添加虚拟主机 stevelau.com，以及取消跨站目录限制，添加虚拟主机的本地 host 解析；
 
-然后将 stevelau.com 文件夹所有内容拷贝到 UPUPW_AP5.6/vhosts 目录下，启动服务器，通过 DHC Client 来验证 RESTful API。
+然后将 stevelau.com 文件夹所有内容拷贝到 UPUPW_AP5.6/vhosts 目录下，启动服务器;
+
+在 cmd 下进入 stevelau.com/mysql_db 目录下：mysql -u root -p < users.sql，加载数据库文件
+
+通过 DHC Client 来验证 RESTful API。
 
 ### 参考
 
