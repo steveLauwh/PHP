@@ -13,14 +13,14 @@ print_r($user->login('Lau', 'steve'));
 
 $article = new Article($pdo);
 
-print_r($article->create('article', 'content', 2));
+print_r($article->create('article', 'content', 1));
 
-print_r($article->view(8));
+//print_r($article->view(1));
 
-print_r($article->edit(8, 'article2', 'content_new', 2));
+//print_r($article->edit(1, 'article2', 'content_new', 1));
 
-var_dump($article->delete(2, 1));
+//var_dump($article->delete(2, 1));
 
-print_r($article->getlist(1, 1, 4));
+//print_r($article->getlist(1, 1, 4));
 
 ?>
